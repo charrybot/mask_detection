@@ -59,7 +59,7 @@ labels = to_categorical(labels)
 data = np.array(data, dtype="float32")  # convert into array from list b/c DL only work on arrays
 labels = np.array(labels)
 
-(trainX, testX, trainY, testY) = train_test_split(data, labels, test_size=0.20, stratify=labels, random_state=30)
+trainX, testX, trainY, testY = train_test_split(data, labels, test_size=0.2, stratify=labels, random_state=30)
 
 # construct the training image generator for data augmentation
 # image data generator creates multiple images from a single image by rotating, zooming, etc.
